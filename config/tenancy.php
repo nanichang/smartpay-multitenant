@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
+use App\Models\Tenant as TenantModel;
 use Stancl\Tenancy\Database\Models\Domain;
 use Stancl\Tenancy\Database\Models\Tenant;
-use App\Models\Tenant as TenantModel;
 
 return [
     'tenant_model' => TenantModel::class,
