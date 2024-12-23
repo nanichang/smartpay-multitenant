@@ -17,7 +17,7 @@ class SuperAdminUserSeeder extends Seeder
 
         $superAdmin = new \App\Models\User([
             'name' => 'Super Admin',
-            'email' => '' . env('SUPER_ADMIN_EMAIL') . '',
+            'email' => ''.env('SUPER_ADMIN_EMAIL').'',
             'password' => bcrypt(env('SUPER_ADMIN_PASSWORD')),
             'email_verified_at' => now(),
             'is_super_admin' => true,
